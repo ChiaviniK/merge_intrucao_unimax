@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Gerencial | genCripto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">gen<span>Cripto</span> <span class="tag-admin">| Admin</span></div>
+        <nav>
+            <ul>
+                <li><span class="user-badge admin">Analista: Master</span></li>
+                <li><a href="index.html" class="btn-logout">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Seção de KPIs Gerais -->
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <h3>Total de Clientes Ativos</h3>
+                <p class="kpi-value">3</p>
+                <span class="kpi-trend positive">+1 este mês</span>
+            </div>
+            <div class="kpi-card">
+                <h3>Volume Total Custodiado</h3>
+                <p class="kpi-value">R$ 277.910,00</p>
+                <span class="kpi-trend">Valor atualizado D-1</span>
+            </div>
+            <div class="kpi-card">
+                <h3>Ativo Mais Negociado</h3>
+                <p class="kpi-value highlight-asset">GOOGL</p>
+                <span class="kpi-trend">18 cotas na base</span>
+            </div>
+        </section>
+
+        <!-- Tabela Consolidada (Resultado da View SQL) -->
+        <div class="card-header mt-30">
+            <h2>Posição Consolidada por Cliente</h2>
+            <div class="action-buttons">
+                <a href="clientes.csv" download="clientes_genCripto.csv" class="btn-export">
+                    📥 Baixar Clientes (.csv)
+                </a>
+                <a href="transacoes.csv" download="transacoes_genCripto.csv" class="btn-export">
+                    📥 Baixar Transações (.csv)
+                </a>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Cliente</th>
+                        <th>Nome</th>
+                        <th>Ativo</th>
+                        <th>Qtd. Total</th>
+                        <th>Preço Médio (R$)</th>
+                        <th>Total Investido (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cliente 1: João -->
+                    <tr>
+                        <td class="client-id">1</td>
+                        <td>João Silva</td>
+                        <td class="ticker">AMZN</td>
+                        <td>8.00</td>
+                        <td>920,00</td>
+                        <td>7.360,00</td>
+                    </tr>
+                    <tr>
+                        <td class="client-id">1</td>
+                        <td>João Silva</td>
+                        <td class="ticker">BTC-USD</td>
+                        <td>0.05</td>
+                        <td>340.000,00</td>
+                        <td>17.000,00</td>
+                    </tr>
+                    <tr>
+                        <td class="client-id">1</td>
+                        <td>João Silva</td>
+                        <td class="ticker">GOOGL</td>
+                        <td>10.00</td>
+                        <td>850,00</td>
+                        <td>8.500,00</td>
+                    </tr>
+                    <tr>
+                        <td class="client-id">1</td>
+                        <td>João Silva</td>
+                        <td class="ticker">MELI</td>
+                        <td>3.00</td>
+                        <td>8.900,00</td>
+                        <td>26.700,00</td>
+                    </tr>
+                    <tr>
+                        <td class="client-id">1</td>
+                        <td>João Silva</td>
+                        <td class="ticker">MSFT</td>
+                        <td>5.00</td>
+                        <td>2.100,00</td>
+                        <td>10.500,00</td>
+                    </tr>
+                    <!-- Cliente 2: Maria -->
+                    <tr>
+                        <td class="client-id">2</td>
+                        <td>Maria Souza</td>
+                        <td class="ticker">BTC-USD</td>
+                        <td>0.01</td>
+                        <td>345.000,00</td>
+                        <td>3.450,00</td>
+                    </tr>
+                    <tr>
+                        <td class="client-id">2</td>
+                        <td>Maria Souza</td>
+                        <td class="ticker">MELI</td>
+                        <td>1.00</td>
+                        <td>8.800,00</td>
+                        <td>8.800,00</td>
+                    </tr>
+                    <!-- Cliente 3: Carlos -->
+                    <tr>
+                        <td class="client-id">3</td>
+                        <td>Carlos Oliveira</td>
+                        <td class="ticker">GOOGL</td>
+                        <td>3.00</td>
+                        <td>860,00</td>
+                        <td>2.580,00</td>
+                    </tr>
+                    <tr>
+                        <td class="client-id">3</td>
+                        <td>Carlos Oliveira</td>
+                        <td class="ticker">MSFT</td>
+                        <td>2.00</td>
+                        <td>2.150,00</td>
+                        <td>4.300,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

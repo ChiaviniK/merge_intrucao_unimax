@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genCripto | O Futuro dos Seus Ativos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">gen<span>Cripto</span></div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#login-section" class="btn-login-nav">Acessar Plataforma</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="sobre">
+            <div class="hero-content">
+                <h1>Domine seus investimentos em um só lugar.</h1>
+                <p>Acompanhe suas ações e criptomoedas com a melhor tecnologia de dados do mercado.</p>
+            </div>
+        </section>
+
+        <section class="login-section" id="login-section">
+            <div class="login-box">
+                <h2>Acesso Restrito</h2>
+                <p>Insira suas credenciais para acessar sua carteira ou o painel de análise.</p>
+                
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" placeholder="Ex: cliente ou analista" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="***" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Entrar</button>
+                    <p id="error-msg" class="error-msg"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
